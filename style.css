@@ -1,0 +1,42 @@
+/* Fonts */
+@font-face {
+    font-family: "BebasNeue";
+    src: url(fonts/BebasNeue\ Bold.otf);
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+/* variables */
+:root{
+    --display-primary-font:"BebasNeue";
+}
+
+.pf-display-font{
+    font-family: var(--display-primary-font);
+}
+
+
+
+/* Products */
+section#products .container .row .column{
+    width: 370px ;
+}
+section#products .container .row .column .card-image{
+    overflow: hidden;
+}
+section#products .container .row .column  img{
+    transition: ease-in-out 0.3s transform;
+    -webkit-transition: ease-in-out 0.3s transform;
+    -moz-transition: ease-in-out 0.3s transform;
+    -ms-transition: ease-in-out 0.3s transform;
+    -o-transition: ease-in-out 0.3s transform;
+}
+section#products .container .row .column:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
